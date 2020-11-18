@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="text_facultad">20sp</dimen>
+    <dimen name="text_cardview">20sp</dimen>
+    <dimen name="text_searchview">15sp</dimen>
+    <dimen name="text_facultadview">22sp</dimen>
+    <dimen name="qr_padding">16dp</dimen>
+
+    <dimen name="tutorial_padding">10dp</dimen>
+    <dimen name="title">30dp</dimen>
+
+    <dimen name="shadowDX">-2</dimen>
+    <dimen name="shadowDY">5</dimen>
+
+    <dimen name="toolbar_margin_top">50dp</dimen>
+    <dimen name="toolbar_margin_lr">20dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="toolbar_radius">20dp</dimen>
+</resources>

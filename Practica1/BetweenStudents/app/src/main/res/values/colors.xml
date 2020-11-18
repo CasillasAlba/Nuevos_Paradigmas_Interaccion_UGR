@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#C4D8CD</color>
+    <color name="background">#EEEFF0</color>
+    <color name="titles">#1F5542</color>
+    <color name="splashBackground">#A4C4B4</color>
+
+    <!-- Translucido -->
+    <color name="transparente">#dc000000</color>
+
+    <!-- Sombras en el Texto -->
+    <color name="light_font">#C4D8CD</color>
+    <color name="text_shadow">#000000</color>
+
+</resources>

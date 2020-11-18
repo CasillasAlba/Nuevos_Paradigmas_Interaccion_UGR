@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">BetweenStudents</string>
+    <string name="app_cerrar">Salir de BetweenStudets</string>
+    <string name="cerrar_mensaje">¿Desea salir de la Aplicación?</string>
+    <string name="aceptar">Sí</string>
+    <string name="cancelar">No</string>
+
+    <string name="indice_facultades">Facultades</string>
+    <string name="indice_becas">Becas</string>
+    <string name="indice_informacion">Información</string>
+
+    <string name="logotipo">logotipo</string>
+
+    <string name="search_hint">Buscar Facultad...</string>
+
+    <!-- CAMPUS DE GRANADA -->
+    <string name="c_centro">Campus Centro</string>
+    <string name="c_cartuja">Campus Cartuja</string>
+    <string name="c_fuentenueva">Campus Fuentenueva</string>
+    <string name="c_aynadamar">Campus Aynadamar</string>
+    <string name="c_pts">Campus PTS</string>
+    <string name="c_ceutamelilla">Ceuta y Melilla</string>
+
+    <!-- CAMPUS CENTRO -->
+    <string name="f_arquitectura">ETS Arquitectura</string>
+    <string name="f_trabajo">Ciencias de Trabajo</string>
+    <string name="f_politicas">Ciencias Políticas y Sociología</string>
+    <string name="f_derecho">Derecho</string>
+    <string name="f_trabajosocial">Trabajo Social</string>
+    <string name="f_traduccion">Traducción e Interpretación</string>
+
+    <!-- CAMPUS CARTUJA -->
+    <string name="f_deporte">Ciencias del Deporte</string>
+    <string name="f_educacion">Ciencias de la Educación</string>
+    <string name="f_economia">Ciencias Económicas y Empresariales</string>
+    <string name="f_comunicacion">Comunicación y Documentación</string>
+    <string name="f_farmacia">Farmacia</string>
+    <string name="f_filosofia">Filosofía y Letras</string>
+    <string name="f_odontologia">Odontologia</string>
+    <string name="f_psicologia">Psicología</string>
+
+    <!-- CAMPUS FUENTENUEVA -->
+    <string name="f_caminos">ETS Ingeniería Caminos, Canales y Puertos</string>
+    <string name="f_edificacion">ETS Ingeniería Edificación</string>
+    <string name="f_ciencias">Facultad de Ciencias</string>
+
+    <!-- CAMPUS AYNADAMAR -->
+    <string name="f_bellasasrtes">Bellas Artes</string>
+    <string name="fw_bellasartes">https://bellasartes.ugr.es/</string>
+    <string name="fu_bellasartes">Calle Periodista Eugenio Selles, s/n, 18014 Granada</string>
+    <string name="f_informatica">Ingeniería Informática y Telecomunicaciones</string>
+    <string name="fw_informatica">https://etsiit.ugr.es/</string>
+    <string name="fu_informatica">Calle Periodista Daniel Saucedo Aranda, s/n, 18014 Granada</string>
+
+    <!-- CAMPUS PTS -->
+    <string name="f_salud">Ciencias de la Salud</string>
+    <string name="fw_salud">https://cienciasdelasalud.ugr.es/</string>
+    <string name="fu_salud">Av. de la Ilustración, 60, 18016 Urbanización los Vergeles, Granada</string>
+    <string name="f_medicina">Medicina</string>
+    <string name="fw_medicina">https://medicina.ugr.es/</string>
+    <string name="fu_medicina">Parque Tecnológico de la Salud, Av. de la Investigación, 11, 18016 Granada</string>
+
+    <!-- Melilla y Ceuta -->
+    <string name="f_melilla_deporte">Ciencias de la Educación y del Deporte (Melilla)</string>
+    <string name="f_melilla_salud">Ciencias de la Salud (Melilla)</string>
+    <string name="f_melilla_socialesjuridicas">Ciencias Sociales y Jurídicas (Melilla)</string>
+    <string name="f_ceuta_salud">Ciencias de la Salud (Ceuta)</string>
+    <string name="f_ceuta_educaeconomtecno">Educación, Economía y Tecnología (Ceuta)</string>
+
+
+    <!-- Horario General -->
+    <string name="f_horario">08:30 a 21:30</string>
+
+    <!-- TABLA FACULTADES-->
+    <string name="key_table_facultades">FACULTADES</string>
+    <string name="key_fac_id">FAC_ID</string>
+    <string name="key_fac_nombre">FAC_NOMBRE</string>
+    <string name="key_fac_ubicacion">FAC_UBICACION</string>
+    <string name="key_fac_imagen">FAC_IMAGEN</string>
+    <string name="key_fac_horario">FAC_HORARIO</string>
+    <string name="key_fac_campus">FAC_CAMPUS</string>
+    <string name="key_fac_web">FAC_WEB</string>
+
+    <!-- TABLA CAMPUS-->
+    <string name="key_table_campus">CAMPUS</string>
+    <string name="key_camp_id">CAMP_ID</string>
+    <string name="key_camp_nombre">CAMP_NOMBRE</string>
+    <string name="key_camp_imagen">CAMP_IMAGEN</string>
+
+    <!-- Valores por Defecto -->
+    <string name="default_values">VALOR QUE CAMBIARA</string>
+
+
+    <!-- Map Activity-->
+    <string name="title_activity_maps">Map</string>
+    <string name="map_ceuta">Ceuta</string>
+    <string name="map_melilla">Melilla</string>
+    <string name="map_granada">Granada</string>
+    <string name="map_seleccion">Elige Mapa</string>
+
+    <!-- Concesion de permisos de la Localización Actual-->
+    <string name="location_access_required">El Acceso a la Ubicación es necesario para usar la Posición Actual.</string>
+    <string name="location_permission_not_available">Permisos no disponibles. Pidiendo permisos para el uso de la Ubicación.</string>
+    <string name="location_permission_available">Permisos de la Ubicación disponibles</string>
+    <string name="location_permission_granted">Permisos de la Ubicación garantizados</string>
+    <string name="location_permission_denied">Permisos de la Ubicación denegados</string>
+    <string name="location_unavailable"><b>La Ubicación no pudo establecerse.</b></string>
+
+    <!-- QR Activity -->
+    <string name="title_activity_qr">QR</string>
+
+    <!-- Concesion de permisos de la camara-->
+    <string name="camera_access_required">El Acceso a la Camara es necesario para usar el lector QR.</string>
+    <string name="camera_permission_not_available">Permisos no disponibles. Pidiendo permisos para el uso de la Camara.</string>
+    <string name="camera_permission_available">Permisos de la Camara disponibles</string>
+    <string name="camera_permission_granted">Permisos de la Camara garantizados</string>
+    <string name="camera_permission_denied">Permisos de la Camara denegados</string>
+    <string name="camera_unavailable"><b>La Camara no pudo iniciarse.</b>\nEsto se produce cuando la camara no está disponible (que ya esté en uso) o que el sistema haya negado el acceso a esta (Que la camara esté desactivada).</string>
+
+    <!-- Becas Activity -->
+    <string name="becasministerio">Becas Ministerio (MEC)</string>
+    <string name="becasjuntaandalucia">Becas Junta de Andalucia</string>
+    <string name="becaspropiasugr">Becas Propias UGR</string>
+
+    <!-- URL Becas -->
+    <string name="url_ministerio">https://www.educacionyfp.gob.es/servicios-al-ciudadano/catalogo/estudiantes/becas-ayudas/para-estudiar</string>
+    <string name="url_juntaandalucia">https://www.juntadeandalucia.es/educacion/portals/web/becas-y-ayudas</string>
+    <string name="url_propiasugr">https://ve.ugr.es/servicios/becas/becas-y-ayudas/becas-propias</string>
+
+    <!-- Mensajes Genéricos -->
+    <string name="ok">OK</string>
+    <string name="error">ERROR</string>
+    <string name="search_title">search</string>
+
+</resources>

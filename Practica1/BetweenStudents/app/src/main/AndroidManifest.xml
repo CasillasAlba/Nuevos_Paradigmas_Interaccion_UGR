@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="npi.betweenstudents">
+    <!-- Es necesario pedir persmisos para poder usar el Lector QR, tanto de camara como vibracion-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- To request foreground location access, declare one of these permissions. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Required only when requesting background location access on
+       Android 10 (API level 29) and higher. -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!-- Para poder usar un navegador interno, es necesario que existan permisos de internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Para poder comprobar si existe una conexion a internet -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- Se inicia en primera instancia el Splash -->
+        <activity android:name=".Splash"
+            android:theme="@style/SplashScreen"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ActivitySlide"
+            android:label="TUTORIAL"/>
+
+        <activity
+            android:name=".ActivityMain"
+            android:label="MAIN"/>
+
+        <activity android:name=".ActivityExit"
+            android:label="EXIT"/>
+
+        <activity
+            android:name=".ActivityMaps"
+            android:label="@string/title_activity_maps"/>
+
+        <activity
+            android:name=".ActivityQR"
+            android:label="@string/title_activity_qr"/>
+
+        <activity
+            android:name=".ActivityInfo"
+            android:label="Informacion"/>
+
+        <activity
+            android:name=".ActivityBecas"
+            android:label="Becas"/>
+
+        <activity
+            android:name=".ActivityFacultades"
+            android:label="Facultades"/>
+
+        <activity android:name=".FragmentSearchView"
+            android:theme="@style/Transparente"
+            android:label="SearchView"/>
+
+        <activity
+            android:name=".ViewFacultad"
+            android:label="VistaFacultad"/>
+
+
+    </application>
+
+</manifest>

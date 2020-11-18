@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".FragmentSearchView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchview_toolbar"
+            android:layout_marginStart="@dimen/toolbar_margin_lr"
+            android:layout_marginEnd="@dimen/toolbar_margin_lr"
+            android:layout_marginTop="@dimen/toolbar_margin_top"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_width="match_parent"
+            app:elevation="12dp"
+            android:queryHint="@string/search_hint"
+            android:iconifiedByDefault="true"
+            android:imeOptions="actionDone"
+            android:searchIcon="@drawable/ic_baseline_search_24"
+            android:background="@drawable/appbar"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_marginStart="@dimen/toolbar_margin_lr"
+        android:layout_marginEnd="@dimen/toolbar_margin_lr"
+        android:layout_marginBottom="@dimen/toolbar_margin_top"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/toolbar_margin_lr"
+            android:layout_marginEnd="@dimen/toolbar_margin_lr">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>

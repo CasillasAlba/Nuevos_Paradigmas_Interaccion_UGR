@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/text_cardview"
+        android:layout_marginEnd="@dimen/text_cardview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fac_view_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/yeseva_one"
+            android:text="Ingeniería Informática y Telecomunicaciones"
+            android:textSize="@dimen/text_facultadview"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="@dimen/shadowDX"
+            android:shadowDy="@dimen/shadowDY"
+            android:shadowRadius="2"
+            android:autoSizeTextType="uniform"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/text_cardview"
+        android:layout_marginEnd="@dimen/text_cardview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fac_view_horario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/yeseva_one"
+            android:text="08:00 a 23:00"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="@dimen/shadowDX"
+            android:shadowDy="@dimen/shadowDY"
+            android:shadowRadius="2"
+            android:textSize="@dimen/text_facultadview"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/text_cardview"
+        android:layout_marginEnd="@dimen/text_cardview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fac_view_ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/yeseva_one"
+            android:text="Calle Periodistas"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="@dimen/shadowDX"
+            android:shadowDy="@dimen/shadowDY"
+            android:shadowRadius="2"
+            android:textSize="@dimen/text_facultadview"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/text_cardview"
+        android:layout_marginEnd="@dimen/text_cardview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fac_view_campus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/yeseva_one"
+            android:text="Campus"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="@dimen/shadowDX"
+            android:shadowDy="@dimen/shadowDY"
+            android:shadowRadius="2"
+            android:textSize="@dimen/text_facultadview"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/text_cardview"
+        android:layout_marginEnd="@dimen/text_cardview"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fac_view_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/yeseva_one"
+            android:text="https://www.ettsit.es"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="@dimen/shadowDX"
+            android:shadowDy="@dimen/shadowDY"
+            android:shadowRadius="2"
+            android:textSize="@dimen/text_facultadview"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
