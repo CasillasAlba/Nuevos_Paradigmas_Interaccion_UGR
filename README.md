@@ -12,8 +12,7 @@ Desarrollamos Between Students, aplicación que proporciona información de las 
 
 - Se ha desarrollado en: 
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<img height="30" src="https://raw.githubusercontent.com/CasillasAlba/CasillasAlba/master/img/firebase.png"> &nbsp;&nbsp;
+<img height="20" src="https://github.com/CasillasAlba/Nuevos_Paradigmas_Interaccion_UGR/tree/main/img/android.png"> &nbsp;&nbsp;
 </p>
 
 
