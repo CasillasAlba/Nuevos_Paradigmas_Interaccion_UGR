@@ -20,7 +20,12 @@ Desarrollo del agente conversacional BEST. Proporciona información general sobr
 
 - Se ha desarrollado en:
 
+<img height="30" src="https://user-images.githubusercontent.com/47610906/102832671-5b1ffd80-43ef-11eb-8f4b-733169bb6cfd.png"> DialogFlow (JavaScript).
+
+<img height="30" src="https://user-images.githubusercontent.com/47610906/102832672-5b1ffd80-43ef-11eb-8b06-07f6a7a8d644.png"> FireBase (Base de datos en la nube y en tiempo real).
 
 - Integrado en las plataformas:
 
-<img height="30" src="https://user-images.githubusercontent.com/47610906/102832526-f2388580-43ee-11eb-91fc-8f03cc372447.png"> Android Studio.
+<img height="30" src="https://user-images.githubusercontent.com/47610906/102832674-5bb89400-43ef-11eb-9dd9-91677e445cac.png"> Between Students (Aplicación en Android Studio).
+
+<img height="30" src="https://user-images.githubusercontent.com/47610906/102832673-5bb89400-43ef-11eb-95fb-9cf7af866079.png"> Kommunicate.io.
