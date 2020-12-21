@@ -1,0 +1,9 @@
+{
+  "id": "147ac5c1-85f8-4656-a732-7484a94540f4",
+  "name": "Cancelacion",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

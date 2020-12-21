@@ -1,0 +1,76 @@
+[
+  {
+    "id": "e1d9a4eb-076b-49ef-ac6c-15c68e0bb700",
+    "data": [
+      {
+        "text": "cuantas ",
+        "userDefined": false
+      },
+      {
+        "text": "plantas",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      },
+      {
+        "text": " hay",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d7e7c9ec-0b3f-437d-98e6-385d93e6d882",
+    "data": [
+      {
+        "text": "Quiero pedir ",
+        "userDefined": false
+      },
+      {
+        "text": "una",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "28371436-020c-4b1b-990b-e809f6284223",
+    "data": [
+      {
+        "text": "¿Donde está la @",
+        "userDefined": false
+      },
+      {
+        "text": "ElementosFacultades",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

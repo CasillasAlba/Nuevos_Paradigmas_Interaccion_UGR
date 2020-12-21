@@ -1,0 +1,101 @@
+{
+  "id": "faf6b26f-2186-4b82-a92a-26f6f257555e",
+  "name": "MostrarCita",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad",
+    "informacion"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "mostrarCita",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "informacion",
+          "lifespan": 5
+        },
+        {
+          "name": "agenda",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "90c06925-f886-46af-8a07-e11038270371",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "33ab7fd0-0557-4a79-a316-fb8f5ef6aff6",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "44305c04-ec40-4bdb-98d2-be16399be637",
+          "name": "ElementosFacultades",
+          "required": false,
+          "dataType": "@ElementosFacultades",
+          "value": "$ElementosFacultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Dame un correo para comprobar",
+            "¿Qué correo fue usado para la cita?",
+            "Indica el correo que usó para la cita"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

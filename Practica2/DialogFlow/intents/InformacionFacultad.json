@@ -1,0 +1,92 @@
+{
+  "id": "177ecc24-8312-40ef-aa06-dec351cff616",
+  "name": "InformacionFacultad",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad",
+    "informacion"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "informacionFacultad",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "informacion",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "fa20b5dd-41a3-43f1-921e-ab9740c4157c",
+          "name": "ElementosFacultades",
+          "required": false,
+          "dataType": "@ElementosFacultades",
+          "value": "$ElementosFacultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1a96c013-91a8-4f45-a09e-406be0d447f1",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "323fc401-a26b-425d-9edf-39dbedbcaf32",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

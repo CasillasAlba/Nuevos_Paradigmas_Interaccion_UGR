@@ -1,0 +1,143 @@
+{
+  "id": "f9a9a878-7897-4d90-bb9e-d232048882e1",
+  "name": "PedirEmail",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad",
+    "informacion",
+    "correo"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "pedirEmail",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "citas",
+          "lifespan": 5
+        },
+        {
+          "name": "correo",
+          "lifespan": 5
+        },
+        {
+          "name": "informacion",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "7852cd54-65ed-4147-ae74-644d8556d8dd",
+          "name": "Correo",
+          "required": false,
+          "dataType": "@sys.email",
+          "value": "$Correo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1f49c78e-6173-445b-b7f4-e75c0e289067",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6d832fb7-c05c-403e-b5a9-3c8dcb3fe06e",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "59421cdb-7b20-4e84-a46e-dad3e5321e96",
+          "name": "ElementosFacultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.ElementosFacultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "dceb82fb-76a7-460d-8d06-7af32614fc76",
+          "name": "Citas",
+          "required": false,
+          "dataType": "",
+          "value": "#citas.Citas",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "1aaeea96-1ced-4871-823d-57865d7f6f1f",
+          "name": "Cancelacion",
+          "required": false,
+          "dataType": "",
+          "value": "#cancelacion.Cancelacion",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

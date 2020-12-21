@@ -1,0 +1,77 @@
+{
+  "id": "9d33c1bc-5741-44c4-9b9d-a8ff6c5537bc",
+  "name": "PedirFacultad",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "pedirFacultad",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "informacion",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f4d74f5c-d11a-46d0-b233-ad896977a795",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "@Facultades",
+          "value": "$Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2522ad7b-d28b-4713-99a3-fa91627e7b21",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

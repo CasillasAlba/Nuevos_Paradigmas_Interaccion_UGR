@@ -1,0 +1,58 @@
+[
+  {
+    "value": "Aulas",
+    "synonyms": [
+      "Clases"
+    ]
+  },
+  {
+    "value": "Biblioteca",
+    "synonyms": [
+      "Biblioteca",
+      "Sala de Estudio",
+      "Biblio"
+    ]
+  },
+  {
+    "value": "Cafeteria",
+    "synonyms": [
+      "Cafeteria",
+      "Cafete"
+    ]
+  },
+  {
+    "value": "Comedores",
+    "synonyms": [
+      "Comedores",
+      "Comedor"
+    ]
+  },
+  {
+    "value": "Horario",
+    "synonyms": [
+      "Horario"
+    ]
+  },
+  {
+    "value": "Secretaria",
+    "synonyms": [
+      "Secretaria"
+    ]
+  },
+  {
+    "value": "Plantas",
+    "synonyms": [
+      "Plantas",
+      "Pisos",
+      "Número de Plantas"
+    ]
+  },
+  {
+    "value": "Citas",
+    "synonyms": [
+      "Citas",
+      "cita",
+      "Agenda"
+    ]
+  }
+]

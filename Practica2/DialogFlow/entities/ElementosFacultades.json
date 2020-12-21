@@ -1,0 +1,9 @@
+{
+  "id": "3cd48440-7e83-4637-bcfa-6b456264d8d5",
+  "name": "ElementosFacultades",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

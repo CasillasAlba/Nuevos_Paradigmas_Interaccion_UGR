@@ -1,0 +1,110 @@
+{
+  "id": "b3014cdf-a9f4-434b-af56-38f739f64135",
+  "name": "PedirCitas",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad",
+    "citas"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "pedirCitas",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "citas",
+          "lifespan": 5
+        },
+        {
+          "name": "correo",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "916bed21-5f9f-40ff-ae21-17369be30fb2",
+          "name": "Citas",
+          "required": false,
+          "dataType": "@Citas",
+          "value": "$Citas",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "311bc1cd-438f-4fd8-80d2-c4768a9f5a18",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "8d1dba7f-383c-4965-bc60-ce285e67f613",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "5a650200-20b1-4a43-a97c-0f752300645f",
+          "name": "ElementosFacultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.ElementosFacultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

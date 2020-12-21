@@ -1,0 +1,95 @@
+{
+  "Ceuta" : {
+    "Educacion" : {
+      "Aulas" : "Primera Planta",
+      "Biblioteca" : "Segunda Planta",
+      "Cafeteria" : "Planta Principal",
+      "Citas" : {
+        "09:00-09:30" : "LIBRE",
+        "09:30-10:00" : "LIBRE",
+        "10:00-10:30" : "LIBRE",
+        "10:30-11:00" : "LIBRE",
+        "11:00-11:30" : "LIBRE",
+        "11:30-12:00" : "LIBRE",
+        "12:00-12:30" : "LIBRE",
+        "12:30-13:00" : "LIBRE",
+        "13:00-13:30" : "LIBRE",
+        "13:30-14:00" : "LIBRE"
+      },
+      "Comedores" : "Co",
+      "Horario" : "08:00 a 22:00",
+      "Plantas" : 2,
+      "Secretaria" : "Sec"
+    }
+  },
+  "Granada" : {
+    "Derecho" : {
+      "Citas" : "NULL"
+    },
+    "Informatica" : {
+      "Aulas" : "Segundo Edificio",
+      "Biblioteca" : "Primer Edificio, Primera Planta",
+      "Cafeteria" : "Primer Edificio, Planta Baja",
+      "Citas" : {
+        "09:00-09:30" : "abc@correo.es",
+        "09:30-10:00" : "alba@correo.es",
+        "10:00-10:30" : "jose@correo.es",
+        "10:30-11:00" : "correo@correo.es",
+        "11:00-11:30" : "este@correo.es",
+        "11:30-12:00" : "LIBRE",
+        "12:00-12:30" : "j@correo.es",
+        "12:30-13:00" : "LIBRE",
+        "13:00-13:30" : "LIBRE",
+        "13:30-14:00" : "LIBRE"
+      },
+      "Comedores" : "Primer Edificio, Planta Baja",
+      "Horario" : "08:30 a 22:30",
+      "Plantas" : 4,
+      "Secretaria" : "Primer Edificio, Planta Principal"
+    },
+    "Salud" : {
+      "Aulas" : "Edificio A",
+      "Biblioteca" : "Edificio B, Primera Planta",
+      "Cafeteria" : "Edificio A",
+      "Citas" : {
+        "09:00-09:30" : "LIBRE",
+        "09:30-10:00" : "LIBRE",
+        "10:00-10:30" : "LIBRE",
+        "10:30-11:00" : "LIBRE",
+        "11:00-11:30" : "LIBRE",
+        "11:30-12:00" : "LIBRE",
+        "12:00-12:30" : "LIBRE",
+        "12:30-13:00" : "LIBRE",
+        "13:00-13:30" : "LIBRE",
+        "13:30-14:00" : "LIBRE"
+      },
+      "Comedores" : "No dispone de Comedores",
+      "Horario" : "08:30 a 22:30",
+      "Plantas" : 4,
+      "Secretaria" : "Edificio A"
+    }
+  },
+  "Melilla" : {
+    "Medicina" : {
+      "Aulas" : "Edificio Uno",
+      "Biblioteca" : "Edificio Dos",
+      "Cafeteria" : "Edificio Uno, Planta Baja",
+      "Citas" : {
+        "09:00-09:30" : "LIBRE",
+        "09:30-10:00" : "LIBRE",
+        "10:00-10:30" : "LIBRE",
+        "10:30-11:00" : "LIBRE",
+        "11:00-11:30" : "LIBRE",
+        "11:30-12:00" : "LIBRE",
+        "12:00-12:30" : "LIBRE",
+        "12:30-13:00" : "LIBRE",
+        "13:00-13:30" : "LIBRE",
+        "13:30-14:00" : "LIBRE"
+      },
+      "Comedores" : "No dispone de Comedores",
+      "Horario" : "08:30 a 22:30",
+      "Plantas" : 2,
+      "Secretaria" : "Edificio Dos"
+    }
+  }
+}

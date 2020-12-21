@@ -1,0 +1,55 @@
+[
+  {
+    "id": "f2dd5b5d-99fc-4248-942c-0ba9c563daaa",
+    "data": [
+      {
+        "text": "Informatica",
+        "meta": "@Facultades",
+        "alias": "Facultades",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b1653703-41fb-4cbb-893f-39581d2dea86",
+    "data": [
+      {
+        "text": "Mi localización es @",
+        "userDefined": false
+      },
+      {
+        "text": "Facultades",
+        "meta": "@Facultades",
+        "alias": "Facultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2f4dea2f-0414-40fa-84b0-a539ee4f7bc2",
+    "data": [
+      {
+        "text": "Estoy en @",
+        "userDefined": false
+      },
+      {
+        "text": "Facultades",
+        "meta": "@Facultades",
+        "alias": "Facultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

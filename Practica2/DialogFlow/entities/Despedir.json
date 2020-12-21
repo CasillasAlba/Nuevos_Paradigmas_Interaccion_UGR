@@ -1,0 +1,9 @@
+{
+  "id": "e74add96-1d75-46cc-88f6-3f276add7815",
+  "name": "Despedir",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

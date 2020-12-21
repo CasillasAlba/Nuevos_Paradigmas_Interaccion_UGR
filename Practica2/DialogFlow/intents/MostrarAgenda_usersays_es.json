@@ -1,0 +1,36 @@
+[
+  {
+    "id": "792c7844-79a4-499e-a86e-9c6afde2ef56",
+    "data": [
+      {
+        "text": "Mi correo es @",
+        "userDefined": false
+      },
+      {
+        "text": "sys.email",
+        "meta": "@sys.email",
+        "alias": "Correo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1e706d33-3a3a-4bdf-93a3-9436e0323d22",
+    "data": [
+      {
+        "text": "alba@correo.es",
+        "meta": "@sys.email",
+        "alias": "Correo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

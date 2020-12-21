@@ -1,0 +1,88 @@
+[
+  {
+    "id": "ed3dfdea-82c2-44dc-91d2-37772211aa3e",
+    "data": [
+      {
+        "text": "alba@gmail.com",
+        "meta": "@sys.email",
+        "alias": "Correo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ef123c7d-82aa-4e37-a8ee-06b95934f8c2",
+    "data": [
+      {
+        "text": "Es @",
+        "userDefined": false
+      },
+      {
+        "text": "sys.email",
+        "meta": "@sys.email",
+        "alias": "Correo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2c34bbfc-b750-43c1-a115-a1f46865e37c",
+    "data": [
+      {
+        "text": "Mi e-mail es ",
+        "userDefined": false
+      },
+      {
+        "text": "@sys.emal",
+        "meta": "@sys.email",
+        "alias": "Correo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ba269709-85ab-476f-bf5b-edc510d109fc",
+    "data": [
+      {
+        "text": "Mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " correo ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "@sys.email",
+        "meta": "@sys.email",
+        "alias": "Correo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

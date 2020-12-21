@@ -1,0 +1,260 @@
+[
+  {
+    "id": "89de032c-2100-4022-a400-fb220d5d40de",
+    "data": [
+      {
+        "text": "Enseña ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "12a70d4a-1590-4fd1-a319-9984a1d53315",
+    "data": [
+      {
+        "text": "Dime ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "agenda",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d9cf285e-76a3-4f2a-baa4-a395d5aef648",
+    "data": [
+      {
+        "text": "Muestra ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "agenda",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d6dfdd0e-0a7b-4475-9bfb-bcd8e3389bca",
+    "data": [
+      {
+        "text": "¿Cuándo ",
+        "userDefined": false
+      },
+      {
+        "text": "es",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1788768c-a0c2-4b42-9117-28882c4e9837",
+    "data": [
+      {
+        "text": "¿Cuándo era ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e56b18b2-6226-4155-b31f-5027a016e8d1",
+    "data": [
+      {
+        "text": "Muestra ",
+        "userDefined": false
+      },
+      {
+        "text": "la hora",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "97c51ad7-6fef-46bd-a43e-fe14ad686749",
+    "data": [
+      {
+        "text": "¿Tengo alguna ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "cd3922d5-c296-444b-82ce-74fbbf2e5949",
+    "data": [
+      {
+        "text": "¿A qué ",
+        "userDefined": false
+      },
+      {
+        "text": "hora",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " era ",
+        "userDefined": false
+      },
+      {
+        "text": "mi",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

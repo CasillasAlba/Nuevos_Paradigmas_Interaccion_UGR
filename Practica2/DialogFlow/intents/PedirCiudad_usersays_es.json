@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ce23c1f8-dfe1-4658-8974-b36272ceef0c",
+    "data": [
+      {
+        "text": "granada",
+        "meta": "@sys.geo-city",
+        "alias": "Ciudades",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1bca324c-0426-407c-af9b-3cf4e6f099cf",
+    "data": [
+      {
+        "text": "Me encuentro en @",
+        "userDefined": false
+      },
+      {
+        "text": "Ciudades",
+        "meta": "@sys.geo-city",
+        "alias": "Ciudades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a7e0b2e1-e4d5-4980-92c6-d5992a73bc8a",
+    "data": [
+      {
+        "text": "En @",
+        "userDefined": false
+      },
+      {
+        "text": "Ciudades",
+        "meta": "@sys.geo-city",
+        "alias": "Ciudades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2235b150-803b-4a39-bb5c-5b818f84863a",
+    "data": [
+      {
+        "text": "Estoy en @",
+        "userDefined": false
+      },
+      {
+        "text": "Ciudades",
+        "meta": "@sys.geo-city",
+        "alias": "Ciudades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

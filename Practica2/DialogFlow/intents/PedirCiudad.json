@@ -1,0 +1,58 @@
+{
+  "id": "be0d0154-8167-4937-8899-33828411c539",
+  "name": "PedirCiudad",
+  "auto": true,
+  "contexts": [
+    "ciudad"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "pedirCiudad",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "8dc5c778-d4de-496e-a521-df79f05875c2",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "@sys.geo-city",
+          "value": "$Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "value": "Informatica",
+    "synonyms": [
+      "Informática",
+      "Ingeniería Informática",
+      "ETSIIT",
+      "Telecomunicaciones"
+    ]
+  },
+  {
+    "value": "Arquitectura",
+    "synonyms": [
+      "Arquitectura",
+      "ETS Arquitectura"
+    ]
+  },
+  {
+    "value": "Trabajo",
+    "synonyms": [
+      "Trabajo",
+      "Ciencias del Trabajo"
+    ]
+  },
+  {
+    "value": "Politicas",
+    "synonyms": [
+      "Políticas",
+      "Ciencias Políticas",
+      "Sociología"
+    ]
+  },
+  {
+    "value": "Derecho",
+    "synonyms": [
+      "Derecho"
+    ]
+  },
+  {
+    "value": "Trabajo Social",
+    "synonyms": [
+      "Trabajo Social"
+    ]
+  },
+  {
+    "value": "Traduccion",
+    "synonyms": [
+      "Traducción",
+      "Interpretación"
+    ]
+  },
+  {
+    "value": "Deporte",
+    "synonyms": [
+      "Deporte",
+      "Deportes",
+      "Ciencias del deporte"
+    ]
+  },
+  {
+    "value": "Educacion",
+    "synonyms": [
+      "Educación",
+      "Ciencias de la Educación",
+      "Magisterio"
+    ]
+  },
+  {
+    "value": "Economia",
+    "synonyms": [
+      "Economía",
+      "Ciencias Económicas",
+      "Empresariales"
+    ]
+  },
+  {
+    "value": "Comunicacion",
+    "synonyms": [
+      "Comunicación",
+      "Odontología",
+      "Documentación"
+    ]
+  },
+  {
+    "value": "Filosofia",
+    "synonyms": [
+      "Filosofía",
+      "Filosofía y Letras"
+    ]
+  },
+  {
+    "value": "Psicologia",
+    "synonyms": [
+      "Psicología"
+    ]
+  },
+  {
+    "value": "Caminos",
+    "synonyms": [
+      "Caminos",
+      "Ingeniería de Caminos",
+      "ETS Caminos",
+      "Canales y Puertos"
+    ]
+  },
+  {
+    "value": "Edificacion",
+    "synonyms": [
+      "Edificación",
+      "ETS Edificación",
+      "Ingeniería Edificación"
+    ]
+  },
+  {
+    "value": "Ciencias",
+    "synonyms": [
+      "Ciencias"
+    ]
+  },
+  {
+    "value": "Bellas Artes",
+    "synonyms": [
+      "Bellas Artes",
+      "BBAA",
+      "BA"
+    ]
+  },
+  {
+    "value": "Salud",
+    "synonyms": [
+      "Salud",
+      "Ciencias de la salud",
+      "Enfermería"
+    ]
+  },
+  {
+    "value": "Medicina",
+    "synonyms": [
+      "Medicina",
+      "PTS"
+    ]
+  },
+  {
+    "value": "Sociales",
+    "synonyms": [
+      "Sociales",
+      "Ciencias Sociales",
+      "Ciencias Sociales y Jurídicas",
+      "Jurídicas",
+      "Ciencias Jurídicas",
+      "Juridico Social"
+    ]
+  },
+  {
+    "value": "Tecnologia",
+    "synonyms": [
+      "Tecnología"
+    ]
+  }
+]

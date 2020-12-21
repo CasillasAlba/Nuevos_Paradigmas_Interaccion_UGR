@@ -1,0 +1,119 @@
+{
+  "id": "a67a1820-7693-40ce-bc21-380bce463d8d",
+  "name": "CancelarCita",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad",
+    "informacion"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "cancelarCita",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "cancelacion",
+          "lifespan": 5
+        },
+        {
+          "name": "informacion",
+          "lifespan": 5
+        },
+        {
+          "name": "correo",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "8f40947e-502b-4cff-a4cd-915a75991e46",
+          "name": "ElementosFacultades",
+          "required": false,
+          "dataType": "@ElementosFacultades",
+          "value": "$ElementosFacultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d80af40b-5260-40de-b70e-563fac1e60ae",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "e6183d63-07bd-49ea-9702-de450da8e895",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "06624f97-f661-4ad2-a52a-7915af4ad28c",
+          "name": "Cancelacion",
+          "required": false,
+          "dataType": "@Cancelacion",
+          "value": "$Cancelacion",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Dime el correo que quieres cancelar",
+            "Muy bien, dime el correo de la cita reservada que quieres cancelar",
+            "¿Qué correo es el usado en la reserva que quieres cancelar?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

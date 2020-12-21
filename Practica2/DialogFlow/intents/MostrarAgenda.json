@@ -1,0 +1,111 @@
+{
+  "id": "7c322955-0e92-486f-aa79-be3a394ed03d",
+  "name": "MostrarAgenda",
+  "auto": true,
+  "contexts": [
+    "ciudad",
+    "facultad",
+    "informacion",
+    "agenda"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "mostrarAgenda",
+      "affectedContexts": [
+        {
+          "name": "ciudad",
+          "lifespan": 5
+        },
+        {
+          "name": "facultad",
+          "lifespan": 5
+        },
+        {
+          "name": "informacion",
+          "lifespan": 5
+        },
+        {
+          "name": "agenda",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "de36394d-779d-45d9-9f41-9f98efdb852f",
+          "name": "Correo",
+          "required": false,
+          "dataType": "@sys.email",
+          "value": "$Correo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4d769732-e478-41ae-83e2-93fe25ed1e4e",
+          "name": "Ciudades",
+          "required": false,
+          "dataType": "",
+          "value": "#ciudad.Ciudades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bf9de6f5-8ef3-43e6-9862-ee9782ee174a",
+          "name": "Facultades",
+          "required": false,
+          "dataType": "",
+          "value": "#facultad.Facultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "11c029a5-26a0-4d75-bf1a-6701028352be",
+          "name": "ElementosFacultades",
+          "required": false,
+          "dataType": "",
+          "value": "#agenda.ElementosFacultades",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

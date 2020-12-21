@@ -1,0 +1,39 @@
+{
+  "id": "fa9e9d8a-4b3b-442b-92e6-4aced9833a44",
+  "name": "Despedida",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "cerrarBot",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fff425b9-3370-4ef6-af0d-8c302b110ad5",
+          "name": "Despedir",
+          "required": false,
+          "dataType": "@Despedir",
+          "value": "$Despedir",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

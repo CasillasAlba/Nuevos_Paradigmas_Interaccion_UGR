@@ -1,0 +1,56 @@
+[
+  {
+    "id": "6de75c88-00f2-4ecf-a8de-d9f4ae4fe442",
+    "data": [
+      {
+        "text": "Cancelar",
+        "meta": "@Cancelacion",
+        "alias": "Cancelacion",
+        "userDefined": true
+      },
+      {
+        "text": " mi ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bcf2992a-637e-4e2b-866d-40ff228015f2",
+    "data": [
+      {
+        "text": "Quiero ",
+        "userDefined": false
+      },
+      {
+        "text": "cancelar",
+        "meta": "@Cancelacion",
+        "alias": "Cancelacion",
+        "userDefined": true
+      },
+      {
+        "text": " una ",
+        "userDefined": false
+      },
+      {
+        "text": "cita",
+        "meta": "@ElementosFacultades",
+        "alias": "ElementosFacultades",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

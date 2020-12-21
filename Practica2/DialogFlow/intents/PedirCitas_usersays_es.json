@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ac53c698-1180-455f-a9de-50526ac01975",
+    "data": [
+      {
+        "text": "A @",
+        "userDefined": false
+      },
+      {
+        "text": "Citas",
+        "meta": "@Citas",
+        "alias": "Citas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "3e923890-9e6b-42b6-814f-3843c1025067",
+    "data": [
+      {
+        "text": "A las @",
+        "userDefined": false
+      },
+      {
+        "text": "Citas",
+        "meta": "@Citas",
+        "alias": "Citas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "bf209f30-0318-47b8-bbf8-7b64e626fef1",
+    "data": [
+      {
+        "text": "Pido a las @",
+        "userDefined": false
+      },
+      {
+        "text": "Citas",
+        "meta": "@Citas",
+        "alias": "Citas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "abb033ca-390e-444c-9257-23f80e61bd06",
+    "data": [
+      {
+        "text": "Quiero la cita a las @",
+        "userDefined": false
+      },
+      {
+        "text": "Citas",
+        "meta": "@Citas",
+        "alias": "Citas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

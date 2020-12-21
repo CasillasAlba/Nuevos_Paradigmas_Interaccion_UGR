@@ -1,0 +1,9 @@
+{
+  "id": "f51550f9-389c-4141-af77-26f6a68e525a",
+  "name": "Citas",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
