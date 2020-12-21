@@ -11,10 +11,6 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 Desarrollamos Between Students, aplicación que proporciona información de las facultades pertenecientes a la Universidad de Granada. Se hace uso de los sensores disponibles en los dispositivos móviles: proximidad, giroscópio, QR, Google Maps.
 
 - Se ha desarrollado en: 
-<p>
-<img height="20" src="https://github.com/CasillasAlba/Nuevos_Paradigmas_Interaccion_UGR/tree/main/img/android.png"> &nbsp;&nbsp;
-</p>
-
 
 
 
