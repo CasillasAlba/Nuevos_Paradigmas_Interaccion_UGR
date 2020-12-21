@@ -18,13 +18,13 @@ Desarrollamos Between Students, aplicación que proporciona información de las 
 ## Práctica 2
 Desarrollo del agente conversacional BEST. Proporciona información general sobre los elementos internos de una facultad, así como permite al usuario gestionar sus citas con la secretaría del centro.
 
-- Desarrollada en:
+### Desarrollada en:
 
 <img height="30" src="https://user-images.githubusercontent.com/47610906/102832671-5b1ffd80-43ef-11eb-8f4b-733169bb6cfd.png"> DialogFlow (JavaScript).
 
 <img height="30" src="https://user-images.githubusercontent.com/47610906/102832672-5b1ffd80-43ef-11eb-8b06-07f6a7a8d644.png"> FireBase (Base de datos en la nube y en tiempo real).
 
-- Integrado en:
+### Integrado en:
 
 <img height="30" src="https://user-images.githubusercontent.com/47610906/102832674-5bb89400-43ef-11eb-9dd9-91677e445cac.png"> Between Students (Aplicación en Android Studio).
 
