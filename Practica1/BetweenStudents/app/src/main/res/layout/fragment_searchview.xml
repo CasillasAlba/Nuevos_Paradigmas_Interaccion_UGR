@@ -29,7 +29,6 @@
             android:searchIcon="@drawable/ic_baseline_search_24"
             android:background="@drawable/appbar"/>
 
-
     </RelativeLayout>
 
     <RelativeLayout

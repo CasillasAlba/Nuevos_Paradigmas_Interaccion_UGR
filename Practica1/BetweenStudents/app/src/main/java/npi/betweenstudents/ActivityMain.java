@@ -1,6 +1,7 @@
 package npi.betweenstudents;
 
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -26,6 +27,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -44,7 +46,15 @@ import android.widget.Toolbar;
 import java.util.ArrayList;
 
 
-public class ActivityMain extends AppCompatActivity implements GestureDetector.OnGestureListener, View.OnTouchListener {
+public class ActivityMain extends AppCompatActivity implements GestureDetector.OnGestureListener {
+
+    // Macros para controlar el movimiento y dirección al hacer el gesto SWIPE
+    private final int LIMITE = 100;
+    private final int VELOCIDAD = 100;
+    private final int SWIPE_UP = 0;
+    private final int SWIPE_DOWN = 1;
+    private final int SWIPE_LEFT = 2;
+    private final int SWIPE_RIGHT = 3;
 
     private RecyclerView rvCampus;
     private LinearLayoutManager rvLinear;
@@ -69,10 +79,6 @@ public class ActivityMain extends AppCompatActivity implements GestureDetector.O
     SensorManager sensorManager;
     Sensor gyroscopeSensor;
     SensorEventListener gyroscopeSensorListener;
-
-    //para sensor interrogacion
-    private int corx, cory;
-    private Lienzo fondo;
 
     // Se inicia la Base de Datos que contiene la información de la app
     // Static para poder usarla en cualquier Activity con los datos cargados
@@ -289,9 +295,7 @@ public class ActivityMain extends AppCompatActivity implements GestureDetector.O
 
 
     @Override
-    public boolean onDown(MotionEvent e) {
-        return true;
-    }
+    public boolean onDown(MotionEvent e) { return true; }
 
 
     @Override
@@ -315,35 +319,68 @@ public class ActivityMain extends AppCompatActivity implements GestureDetector.O
     }
 
     @Override
-    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        Intent info = new Intent(getApplicationContext(), FragmentSearchView.class);
-        startActivity(info);
+    public boolean onFling(MotionEvent downEvent, MotionEvent moveEvent, float velocityX, float velocityY) {
+        boolean result = false;
 
-        return true;
-    }
+        float diffY = moveEvent.getY() - downEvent.getY(); //--> Lo lejos que ha llegado el dedo en la pantalla tras deslizar Eje Y
+        float diffX = moveEvent.getX() - downEvent.getX(); // --> Lo lejos que ha llegado el dedo en la pantalla tras deslizar Eje X
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        corx = (int) event.getX();
-        cory = (int) event.getY();
-        fondo.invalidate();
-        return true;
-    }
+        int swipe = SwipeMovement(diffX, diffY, velocityX, velocityY);
+        ActivityOptions animacion;
 
-    class Lienzo extends View {
+        switch (swipe){
+            case SWIPE_UP:
+                result = true;
+                Intent info = new Intent(getApplicationContext(), FragmentSearchView.class);
+                animacion = ActivityOptions.makeCustomAnimation(this, R.anim.slide_in, R.anim.slide_out);
+                startActivity(info, animacion.toBundle());
+                break;
 
-        public Lienzo(Context context) {
-            super(context);
+            case SWIPE_DOWN:
+                result = true;
+                Intent chatbot = new Intent(getApplicationContext(), FragmentDialogFlow.class);
+                animacion = ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out);
+                startActivity(chatbot, animacion.toBundle());
+                break;
+
+            case SWIPE_LEFT:
+                result = true;
+                break;
+
+            case SWIPE_RIGHT:
+                result = true;
+                break;
         }
 
-        protected void onDraw(Canvas canvas) {
-            canvas.drawRGB(255, 255, 0);
-            Paint pincel1 = new Paint();
-            pincel1.setARGB(255, 255, 0, 0);
-            pincel1.setStrokeWidth(4);
-            pincel1.setStyle(Paint.Style.STROKE);
-            canvas.drawCircle(corx, cory, 20, pincel1);
-        }
+        return result;
     }
 
+    private int SwipeMovement(float diffX, float diffY, float velocityX, float velocityY){
+        int movimiento = -1;
+
+        //¿Es mayor el movimiento a través de X o Y?
+        if (Math.abs(diffX) > Math.abs(diffY)) {
+            // Se comprueba si está dentro de los limites impuestos, o sea, si se ha movido algo a una determinada velocidad
+            if (Math.abs(diffX) > LIMITE && Math.abs(velocityX) > VELOCIDAD) {
+                // El punto 0 es el centro, por tanto, si es MAYOR se ha desplazado hacia la derecha
+                if (diffX > 0) {
+                    movimiento = SWIPE_RIGHT;
+                    // El punto 0 es el centro, por tanto, si es MENOR se ha desplazado hacia la izquierda
+                } else {
+                    movimiento = SWIPE_LEFT;
+                }
+            }
+        // Es mayor el Eje Y
+        } else {
+            if (Math.abs(diffY) > LIMITE && Math.abs(velocityY)> VELOCIDAD) {
+                // Siendo el punto 0 el centro, si es mayor, es que se ha desplazado hacia arriba
+                if (diffY > 0) {
+                    movimiento = SWIPE_DOWN;
+                } else {
+                    movimiento = SWIPE_UP;
+                }
+            }
+        }
+        return movimiento;
+    }
 }

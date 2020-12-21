@@ -117,6 +117,14 @@
     <string name="camera_permission_denied">Permisos de la Camara denegados</string>
     <string name="camera_unavailable"><b>La Camara no pudo iniciarse.</b>\nEsto se produce cuando la camara no está disponible (que ya esté en uso) o que el sistema haya negado el acceso a esta (Que la camara esté desactivada).</string>
 
+    <!-- Concesion de permisos del audio record -->
+    <string name="audio_access_required">El Acceso a la Audio es necesario para usar el Asistente de Voz.</string>
+    <string name="audio_permission_not_available">Permisos no disponibles. Pidiendo permisos para el uso del Audio.</string>
+    <string name="audio_permission_available">Permisos del Audio disponibles</string>
+    <string name="audio_permission_granted">Permisos del Audio garantizados</string>
+    <string name="audio_permission_denied">Permisos del Audio denegados</string>
+    <string name="audio_unavailable"><b>El Audio no pudo iniciarse.</b>\nEl sistema ha negado el acceso al Audio.</string>
+
     <!-- Becas Activity -->
     <string name="becasministerio">Becas Ministerio (MEC)</string>
     <string name="becasjuntaandalucia">Becas Junta de Andalucia</string>
@@ -131,5 +139,14 @@
     <string name="ok">OK</string>
     <string name="error">ERROR</string>
     <string name="search_title">search</string>
+    <string name="chat_preguntar">Pregúntame</string>
+    <string name="escuchando">Escuchando…</string>
+    <string name="input">Your query: %1$s</string>
+    <string name="answer">Agent answer: %1$s</string>
+    <string name="intent">Intent name: %1$s</string>
+    <string name="query_vacia">Introduzca un mensaje</string>
+    <string name="error_chat_conection">Hay un problema de comunicación y es imposible conectar al chat</string>
+    <string name="TokenDialogS">AIzaSyB-Gd2Iu_l0XhpuByAjFSEnRp3C2TIE9rg</string>
+    <string name="fb_listening">Boton para realizar consultas mediante asistente de voz</string>
 
 </resources>

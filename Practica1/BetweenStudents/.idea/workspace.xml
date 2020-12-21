@@ -12,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pie9" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -29,19 +29,32 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="navigationResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1kNsjISNy9SKmyxMWvf0yF3jhK1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-12-20T12:05:27.944Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/raw" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -52,12 +65,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="BetweenStudents.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -93,11 +107,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -117,9 +136,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="501" y="253" key="AndroidCreateResourceFileDialog" timestamp="1605553318418">
-      <screen x="0" y="0" width="1842" height="996" />
+    <state x="829" y="288" width="950" height="537" key="#PSD" timestamp="1608153326583">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="829" y="288" width="950" height="537" key="#PSD/0.27.1920.1053@0.27.1920.1053" timestamp="1608153326583" />
+    <state x="1147" y="355" width="575" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608289820854">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1147" y="355" width="575" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1608289820854" />
+    <state x="1173" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1608154004007">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1173" y="261" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1608154004007" />
+    <state x="1173" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608430496785">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1173" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1608430496785" />
+    <state x="148" y="494" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1608290750893">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="501" y="253" key="AndroidCreateResourceFileDialog/0.0.1842.996@0.0.1842.996" timestamp="1605553318418" />
+    <state x="148" y="494" width="824" height="491" key="AndroidCreateResourceFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1608290750893" />
+    <state x="776" y="341" width="357" height="431" key="AndroidCreateXmlResourceDialog" timestamp="1608477692691">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="776" y="341" width="357" height="431" key="AndroidCreateXmlResourceDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1608477692691" />
+    <state x="590" y="127" width="1230" height="853" key="DiffContextDialog" timestamp="1608464666357">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="590" y="127" width="1230" height="853" key="DiffContextDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1608464666357" />
+    <state width="1384" height="275" key="GridCell.Tab.0.bottom" timestamp="1608478086183">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1384" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1608478086183" />
+    <state width="1384" height="275" key="GridCell.Tab.0.center" timestamp="1608478086182">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1384" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1608478086182" />
+    <state width="1384" height="275" key="GridCell.Tab.0.left" timestamp="1608478086182">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1384" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1608478086182" />
+    <state width="1384" height="275" key="GridCell.Tab.0.right" timestamp="1608478086183">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1384" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1608478086183" />
   </component>
 </project>

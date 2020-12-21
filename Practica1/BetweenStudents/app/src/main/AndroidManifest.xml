@@ -15,6 +15,8 @@
 
     <!-- Para poder usar un navegador interno, es necesario que existan permisos de internet -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Para poder usar el reconocimiento de voz -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <!-- Para poder comprobar si existe una conexion a internet -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -83,6 +85,12 @@
         <activity android:name=".FragmentSearchView"
             android:theme="@style/Transparente"
             android:label="SearchView"/>
+
+        <activity android:name=".FragmentDialogFlow"
+            android:theme="@style/ChatDialog"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:label="DialogFlow"/>
 
         <activity
             android:name=".ViewFacultad"

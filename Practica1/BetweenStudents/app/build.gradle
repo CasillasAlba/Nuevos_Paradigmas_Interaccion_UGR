@@ -10,15 +10,39 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "TokenDialog", "\"AIzaSyB-Gd2Iu_l0XhpuByAjFSEnRp3C2TIE9rg\""
+            resValue 'string', "TokenDialog", "\"AIzaSyB-Gd2Iu_l0XhpuByAjFSEnRp3C2TIE9rg\""
         }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', "TokenDialog", "\"AIzaSyB-Gd2Iu_l0XhpuByAjFSEnRp3C2TIE9rg\""
+            resValue 'string', "TokenDialog", "\"AIzaSyB-Gd2Iu_l0XhpuByAjFSEnRp3C2TIE9rg\""
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // Java V2
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/INDEX.LIST'
     }
 }
 
@@ -26,21 +50,26 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    implementation 'androidx.navigation:navigation-fragment:2.3.0'
-    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
     implementation 'androidx.viewpager:viewpager:1.0.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
-    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "androidx.cardview:cardview:1.0.0"
-    implementation 'com.google.android.gms:play-services-vision:20.1.2'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-
-    implementation 'com.github.jd-alexander:library:1.1.0'
+    //DialogFlow APY KEY :-> AIzaSyB-Gd2Iu_l0XhpuByAjFSEnRp3C2TIE9rg
+    implementation 'ai.api:sdk:2.0.7@aar'
+    implementation 'ai.api:libai:1.6.12'
+    //JAVA V2
+    implementation 'com.google.cloud:google-cloud-dialogflow:0.67.0-alpha'
+    //Para el error de sesion
+    implementation 'io.grpc:grpc-okhttp:1.15.1'
 
 }

@@ -76,4 +76,10 @@ public class FragmentSearchView extends FragmentActivity {
         });
 
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+    }
 }

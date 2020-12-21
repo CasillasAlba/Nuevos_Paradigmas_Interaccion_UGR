@@ -8,7 +8,9 @@
     <color name="splashBackground">#A4C4B4</color>
 
     <!-- Translucido -->
-    <color name="transparente">#dc000000</color>
+    <color name="transparente">#DC000000</color>
+
+    <color name="bot_background">#B9D4F4E3</color>
 
     <!-- Sombras en el Texto -->
     <color name="light_font">#C4D8CD</color>
