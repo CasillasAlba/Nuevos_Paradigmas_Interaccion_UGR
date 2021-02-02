@@ -4,8 +4,8 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 ## Contribuidores
 + :bust_in_silhouette: [Alba Casillas Rodríguez](https://github.com/CasillasAlba)
 + :bust_in_silhouette: [Jose Manuel Osuna Luque](https://github.com/JosuZx13)
-+ :bust_in_silhouette: [Andrea Navarro Jimenez](https://github.com/andreanaji007)
-+ :bust_in_silhouette: [Miguel Molino Moreno](https://github.com/Miguel-mm)
++ :bust_in_silhouette: [Andrea Navarro Jimenez](https://github.com/andreanaji007) [Prácticas 1 y 2]
++ :bust_in_silhouette: [Miguel Molino Moreno](https://github.com/Miguel-mm) [Práctica 1]
 
 ## Práctica 1
 Desarrollamos Between Students, aplicación que proporciona información de las facultades pertenecientes a la Universidad de Granada. Se hace uso de los sensores disponibles en los dispositivos móviles: proximidad, giroscópio, QR, Google Maps.
