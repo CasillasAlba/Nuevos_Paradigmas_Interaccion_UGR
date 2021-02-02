@@ -3,9 +3,9 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 
 ## Contribuidores
 + :bust_in_silhouette: [Alba Casillas Rodríguez](https://github.com/CasillasAlba)
-+ :bust_in_silhouette: [Jose Manuel Osuna Luque](https://github.com/JosuZx13)
-+ :bust_in_silhouette: [Andrea Navarro Jimenez](https://github.com/andreanaji007)
-+ :bust_in_silhouette: [Miguel Molino Moreno](https://github.com/Miguel-mm)
++ :bust_in_silhouette: [Jose Manuel Osuna Luque](https://github.com/JosuZx13) [Prácticas 1, 2 y 3]
++ :bust_in_silhouette: [Andrea Navarro Jimenez](https://github.com/andreanaji007) [Prácticas 1 y 2]
++ :bust_in_silhouette: [Miguel Molino Moreno](https://github.com/Miguel-mm) [Práctica 1]
 
 ## Práctica 1
 Desarrollamos Between Students, aplicación que proporciona información de las facultades pertenecientes a la Universidad de Granada. Se hace uso de los sensores disponibles en los dispositivos móviles: proximidad, giroscópio, QR, Google Maps.
@@ -29,3 +29,12 @@ Desarrollo del agente conversacional BEST. Proporciona información general sobr
 <img height="30" src="https://user-images.githubusercontent.com/47610906/102832674-5bb89400-43ef-11eb-9dd9-91677e445cac.png"> Between Students (Aplicación en Android Studio).
 
 <img height="30" src="https://user-images.githubusercontent.com/47610906/102832673-5bb89400-43ef-11eb-95fb-9cf7af866079.png"> Kommunicate.io.
+
+
+## Práctica 3
+Desarrolo de un sistema de diálogo hablado usando el lenguaje VoiceXML. La finalidad del sistema será interaccionar con una Secretaría Virtual mediante voz para gestionar sus citas universitarias.
+
+### Desarrollada en:
+
+<img height="30" src="https://user-images.githubusercontent.com/47610906/106669940-b75c6c80-65ac-11eb-872d-b718cb0c9495.png"> VoiceXML.
+
