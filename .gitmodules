@@ -1,0 +1,3 @@
+[submodule "ChatBot_Azure"]
+	path = ChatBot_Azure
+	url = https://github.com/CasillasAlba/ChatBot_Azure.git
