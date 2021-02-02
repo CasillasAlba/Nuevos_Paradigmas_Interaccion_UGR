@@ -31,7 +31,7 @@ Desarrollo del agente conversacional BEST. Proporciona información general sobr
 <img height="30" src="https://user-images.githubusercontent.com/47610906/102832673-5bb89400-43ef-11eb-95fb-9cf7af866079.png"> Kommunicate.io.
 
 
-## Práctica 2
+## Práctica 3
 Desarrolo de un sistema de diálogo hablado usando el lenguaje VoiceXML. La finalidad del sistema será interaccionar con una Secretaría Virtual mediante voz para gestionar sus citas universitarias.
 
 ### Desarrollada en:
