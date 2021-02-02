@@ -34,3 +34,7 @@ Desarrollo del agente conversacional BEST. Proporciona información general sobr
 ## Práctica 2
 Desarrolo de un sistema de diálogo hablado usando el lenguaje VoiceXML. La finalidad del sistema será interaccionar con una Secretaría Virtual mediante voz para gestionar sus citas universitarias.
 
+### Desarrollada en:
+
+<img height="30" src="https://user-images.githubusercontent.com/47610906/106669940-b75c6c80-65ac-11eb-872d-b718cb0c9495.png"> VoiceXML.
+
