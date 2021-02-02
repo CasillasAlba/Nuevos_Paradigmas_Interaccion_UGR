@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar ciudades;
+
+public <ciudades> = granada | ceuta | melilla | madrid | barcelona | valencia | sevilla | zaragoza | malaga | murcia | palma | bilbao | alicante | cordoba | valladolid | vigo | gijon | vitoria | la coruña | elche | tarrasa | badalona | oviedo | sabadell | cartagena | jerez de la frontera | mostoles | tenerife | pamplona | almeria | alcala de henares | fuenlabrada | leganes | san sebastian | getafe | burgos | albacete | castellon | santander | alcorcon | logroño | badajoz | marbella | salamanca | huelva | lerida | tarragona | parla | mataro | leon | algeciras | cadiz | jaen | reus | orense | gerona | teide | caceres | santiago de compostela | toledo | el ejido | pontevedra | mijas | fuengirola | alcala | ciudad real | zamora | villareal;

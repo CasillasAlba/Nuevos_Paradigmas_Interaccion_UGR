@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar faculty;
+
+public <faculty> = it | arts | medicine | health | physics | philosophy | law | education | economy | psychology | politics;

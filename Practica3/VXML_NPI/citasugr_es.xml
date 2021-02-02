@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xml:lang="es-ES" application="information.xml">
+
+    <!-- Indicamos que la etiqueta help esta asignada a la gramatica ayuda, en caso de que el usuario diga una expresion diferente-->
+	<link event="help">
+		<grammar src="gramaticas/ayuda.jsgf"/>
+	</link>
+    
+    <script src="funciones/comprobarciudad.js"/>
+    <script src="funciones/comprobarfacultad.js"/>
+    <script src="funciones/comprobarhorario.js"/>
+    
+    <var name="ciudad_name"/>
+	<var name="facultad_name"/>
+    <var name="hora_name"/>
+    <var name="correcto"/>
+    <var name="eleccion"/>
+    
+    <var name="hay_cita"></var>
+    <assign name="hay_cita" expr="'no'"/>
+    
+    <!-- MENU PRINCIPAL -->
+    <form id="inicio">
+        <!-- A modo de saludo, y para indicar qué hará el usuario, se presenta la accion -->
+        <block>
+            <prompt><prosody rate="medium">Para RESERVAR una cita diga RESERVAR</prosody></prompt>
+            <break time="150ms"/>
+            <prompt><prosody rate="medium">Para CANCELAR una cita diga CANCELAR</prosody></prompt>
+            <break time="150ms"/>
+            <prompt><prosody rate="medium">Para CONSULTAR su cita diga CONSULTAR</prosody></prompt>
+            <break time="150ms"/>
+            <prompt><prosody rate="medium">Si no quiere realizar ninguna opcion, por favor diga FIN</prosody></prompt>
+		<break time="500ms"/>
+        </block>
+        
+        <field name="elegir">
+            <grammar src="gramaticas/eleccion.jsgf"/>
+            <prompt>Que va a hacer?</prompt>
+        
+            <filled>
+                <assign name="eleccion" expr="elegir"/>
+                
+                <if cond="eleccion=='reservar'">
+                    <if cond="hay_cita=='si'">
+                        <prompt>Usted ya ha reservado una cita. Pruebe a consultarla para ver cual es. Reiniciando el formulario </prompt>
+                        <break time="1000ms"/>
+                        <goto next="#inicio"/>
+                    <else/>
+                        <goto next="#f_reservar"/>
+                    </if>
+
+                <elseif cond="eleccion=='consultar'"/>
+                    <goto next="#f_consultar"/>
+                    
+                <elseif cond="eleccion=='cancelar'"/>
+                    <goto next="#f_cancelar"/>
+
+                <elseif cond="eleccion=='fin'"/>
+                    <prompt> OK. Adios.</prompt>
+					<exit/>
+                
+                <else/>
+					<prompt> La opcion dicha no esta disponible </prompt>
+					<clear namelist="inicio"/>
+				</if>
+
+            </filled>
+        
+        </field>
+        
+    </form>    
+    
+    
+    <!-- Se usa este formulario para recoger los datos de una cita -->
+    <form id="f_reservar">
+        <!-- A modo de saludo, y para indicar qué hará el usuario, se presenta la accion -->
+        <block>
+            <prompt> Esta a punto de reservar una cita</prompt>
+            <break time="500ms"/>
+        </block>
+       
+        
+        <!-- En este campo name, llamado ciudad, se guarda la respuesta del usuario de dicho field -->
+        <field name="ciu">
+            <grammar src="gramaticas/ciudad.jsgf"/>
+            <prompt>Indique la Ciudad en la que se encuentra o diga ayuda para ver en que opciones dispone</prompt>
+
+            <!-- Llama al evento 'info_ciudades' del fichero information.xml cuando el usuario pide ayuda-->
+            <help>
+                <throw event="info_ciudades"/>
+            </help>
+            
+            <!-- Llama al evento 'info_ciudades' del fichero information.xml cuando se vence el tiempo de respuesta-->
+            <noinput>
+                <throw event="info_ciudades"/>
+            </noinput>
+
+            <filled>
+                <assign name="correcto" expr="comprobarCiudad(ciu)"/>
+                
+                <!-- Si devuelve 1, la ciudad es correcta -->
+                <if cond="correcto=='0'">
+                    <goto next="#ciudad_error"/>
+                </if>
+                
+                <assign name="ciudad_name" expr="ciu"/>
+                
+            </filled>
+            
+        </field>
+        
+        <field name="fac">
+            <grammar src="gramaticas/facultad.jsgf"/>
+            <prompt>Indique la Facultad en la que quiere la cita o diga ayuda para ver en que opciones dispone</prompt>
+            <help>
+                <throw event="info_facultades"/>
+            </help>
+            <noinput>
+                <throw event="info_facultades"/>
+            </noinput>
+            
+            <filled>
+                <assign name="correcto" expr="comprobarFacultad(fac)"/>
+                
+                <!-- Si devuelve 1, la facultad es correcta -->
+                <if cond="correcto=='0'">
+                    <goto next="#facultad_error"/>
+                </if>
+                
+                <assign name="facultad_name" expr="fac"/>
+                
+            </filled>
+            
+        </field>
+        
+        <field name="hor">
+            <grammar src="gramaticas/horario.jsgf"/>
+            <prompt>A que hora quiere la cita? Puede decir ayuda consultar los horarios</prompt>
+            <help>
+                <throw event="info_horarios"/>
+            </help>
+            <noinput>
+                <throw event="info_horarios"/>
+            </noinput>
+        </field>
+        
+        <filled>
+            <assign name="correcto" expr="comprobarHorario(hor)"/>
+            
+            <if cond="correcto=='0'">
+                <goto next="#horario_error"/>
+            </if>
+            
+            <assign name="hora_name" expr="hor"/>
+
+            <prompt>Ha pedido cita a las <value expr="hora_name"/> en la Facultad de <value expr="facultad_name"/> de la ciudad de <value expr="ciudad_name"/></prompt>
+            <assign name="hay_cita" expr="'si'"/>
+            <goto next="#f_reiniciar"/>
+        </filled>
+  
+    </form>
+    
+    <form id="f_consultar">
+        <block>
+            <prompt> Vamos a consultar su cita</prompt>
+            <break time="250ms"/>
+        </block>
+        
+        <field name="confirmacion_cita">
+            <grammar src="gramaticas/confirmacion.jsgf"/>
+            <prompt>Le parece bien? Responda Si o No</prompt>
+            
+            <filled>
+                <if cond="confirmacion_cita=='si'">
+                    <if cond="hay_cita=='si'">
+                        <prompt>Ha pedido cita en la Facultad de <value expr="facultad_name"/> de la ciudad de <value expr="ciudad_name"/></prompt>
+                        <goto next="#f_reiniciar"/>
+
+                    <else/>
+                        <prompt>Aun no ha pedido una cita</prompt>
+                        <break time="1000ms"/>
+                        <goto next="#f_reiniciar"/>
+                    </if>    
+                
+                <else/>
+                    
+                    <prompt>Muchas gracias por haber utilizado nuestra plataforma. Adios</prompt>
+                    <noinput>
+                        <exit/>
+                    </noinput>
+                </if>
+            
+            
+            </filled>
+                        
+        </field>
+    
+    </form>
+    
+    
+    <form id="f_cancelar">
+        <block>
+            <prompt> Vamos a CANCELAR su cita</prompt>
+            <break time="250ms"/>
+        </block>
+        
+        <field name="confirmacion_cita">
+            <grammar src="gramaticas/confirmacion.jsgf"/>
+            <prompt>Esta seguro de que quiere cancelarla? Responda Si o No</prompt>
+            
+            <filled>
+                <if cond="confirmacion_cita=='si'">
+                    <if cond="hay_cita=='si'">
+                        <assign name="hay_cita" expr="'no'"/>
+                        
+                        <prompt>La cita se ha eliminado</prompt>
+                        <goto next="#f_reiniciar"/>
+                        
+                    <else/>
+                        <prompt>Aun no ha pedido una cita.</prompt>
+                        <break time="1000ms"/>
+                        <goto next="#f_reiniciar"/>
+                    </if>    
+                
+                <else/>
+                    
+                    <prompt>Muchas gracias por haber utilizado nuestra plataforma. Adios</prompt>
+                    <noinput>
+                        <exit/>
+                    </noinput>
+                </if>
+            
+            
+            </filled>
+                        
+        </field>
+    
+    </form>
+    
+    
+    <form id="f_reiniciar">
+        <field name="reinicio">
+            <grammar src="gramaticas/confirmacion.jsgf"/>
+            <prompt>Desea hacer algo mas?</prompt>
+            
+            <filled>
+                <if cond="reinicio=='si'">
+                    <prompt>De acuerdo. Reiniciando el Formulario...</prompt>
+                    <break time="1s"/>
+                    <goto next="#inicio"/>
+                
+                <else/>
+                    
+                    <prompt>Muchas gracias por haber utilizado nuestra plataforma. Adios</prompt>
+                    <noinput>
+                        <exit/>
+                    </noinput>
+                </if>
+            
+            </filled>
+            
+        </field>
+    
+    </form>
+    
+    
+    <form id="ciudad_error">
+        <field name="ciu_error">
+            <prompt>Lo siento, solo trabajamos con la Universidad de Granada, Ceuta y Melilla. Por favor, vuelva a realizar la llamada</prompt>
+            <noinput>
+                <exit/>
+			</noinput>
+        </field>
+    
+    </form>
+    
+    <form id="facultad_error">   
+        <field name="fac_error">
+            <prompt>Solo trabajamos con las Facultades de Informatica, Bellas Artes y Salud. Por favor, vuelva a realizar la llamada</prompt>
+            <noinput>
+                <exit/>
+			</noinput>
+            
+        </field>
+    
+    </form>
+
+    <form id="horario_error">
+        <field name="hor_error">
+            <prompt>La hora indicada no es valida. Solo hay cita de 9 a 12 y media en periodos de 30 minutos. Por favor, vuelva a realizar la llamada</prompt>
+            <noinput>
+                <exit/>
+			</noinput>
+        </field>
+    
+    </form>
+
+</vxml>

@@ -1,0 +1,16 @@
+#JSGF V1.0;
+
+grammar horas;
+
+public <horas> = una [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco]| 
+dos [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+tres [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco]| 
+cuatro [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+cinco [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco]| 
+seis [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+siete [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+ocho [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+nueve [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+diez [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+once [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco] | 
+doce [en punto] [y cinco] [y diez] [y cuarto] [y veinte] [y veinticinco] [y media] [menos veinticinco] [menos veinte] [menos cuarto] [menos diez] [menos cinco];

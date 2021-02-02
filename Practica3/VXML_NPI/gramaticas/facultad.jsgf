@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar facultades;
+
+public <facultades> = [ingenieria] informatica | [bellas] artes | medicina | salud | fisica | filosofia | derecho | educacion | economia | psicologia | politicas;

@@ -1,0 +1,16 @@
+#JSGF V1.0;
+
+grammar schedule;
+
+public <schedule> = [half past] [quarter to] [quarter past] one [o clock] |
+[half past] [quarter to] [quarter past] two [o clock] |
+[half past] [quarter to] [quarter past] three [o clock] |
+[half past] [quarter to] [quarter past] four [o clock] |
+[half past] [quarter to] [quarter past] five [o clock] |
+[half past] [quarter to] [quarter past] six [o clock] |
+[half past] [quarter to] [quarter past] seven [o clock] |
+[half past] [quarter to] [quarter past] eight [o clock] |
+[half past] [quarter to] [quarter past] nine [o clock] |
+[half past] [quarter to] [quarter past] eleven [o clock] |
+[half past] [quarter to] [quarter past] twelve [o clock] |
+[half past] [quarter to] [quarter past] ten [o clock] ;

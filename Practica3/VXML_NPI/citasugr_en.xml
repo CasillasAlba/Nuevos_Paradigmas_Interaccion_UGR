@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xml:lang="en-US" application="information.xml">
+
+    <!-- Indicamos que la etiqueta help esta asignada a la gramatica ayuda, en caso de que el usuario diga una expresion diferente-->
+	<link event="help">
+		<grammar src="grammar/help.jsgf"/>
+	</link>
+    
+    <script src="funciones/comprobarciudad.js"/>
+    <script src="funciones/checkFaculty.js"/>
+    <script src="funciones/checkhorario.js"/>
+    
+    <var name="ciudad_name"/>
+	<var name="facultad_name"/>
+    <var name="hora_name"/>
+    <var name="correcto"/>
+    <var name="choose"/>
+    
+    <var name="hay_cita"></var>
+    <assign name="hay_cita" expr="'no'"/>
+    
+    <!-- MENU PRINCIPAL -->
+    <form id="inicio">
+        <!-- A modo de saludo, y para indicar qué hará el usuario, se presenta la accion -->
+        <block>
+            <prompt><prosody rate="medium">To BOOK and appointment say BOOK</prosody></prompt>
+            <break time="150ms"/>
+            <prompt><prosody rate="medium">To CANCEL and appointment say CANCEL</prosody></prompt>
+            <break time="150ms"/>
+            <prompt><prosody rate="medium">To CONSULT and appointment say CONSULT</prosody></prompt>  
+            <break time="150ms"/>
+            <prompt><prosody rate="medium">If you don't want to do anything, please say END</prosody></prompt>
+		<break time="500ms"/>      
+        </block>
+        
+        <field name="elegir">
+            <grammar src="grammar/choose.jsgf"/>
+            <prompt>What do you want to choose?</prompt>
+        
+            <filled>
+                <assign name="choose" expr="elegir"/>
+                
+                <if cond="choose=='book'">
+                    <if cond="hay_cita=='si'">
+                        <prompt>You have already booked an appointment. Try to consult it. Reloading the questionnaire... </prompt>
+                        <break time="1000ms"/>
+                        <goto next="#inicio"/>
+                    <else/>
+                        <goto next="#f_reservar"/>
+                    </if>
+                
+                <elseif cond="choose=='consult'"/>
+                    <goto next="#f_consultar"/>
+                    
+                <elseif cond="choose=='cancel'"/>
+                    <goto next="#f_cancelar"/>
+                
+                <elseif cond="choose=='end'"/>
+                    <prompt> OK. Goodbye</prompt>
+					<exit/>
+                
+                <else/>
+					<prompt> This is not a correct option </prompt>
+					<clear namelist="inicio"/>
+				</if>
+
+            </filled>
+        
+        </field>
+        
+    </form>    
+    
+    
+    <!-- Se usa este formulario para recoger los datos de una cita -->
+    <form id="f_reservar">
+        <!-- A modo de saludo, y para indicar qué hará el usuario, se presenta la accion -->
+        <block>
+            <prompt> You are about to book an appointment</prompt>
+            <break time="500ms"/>
+        </block>
+        
+        <!-- En este campo name, llamado ciudad, se guarda la respuesta del usuario de dicho field -->
+        <field name="ciu">
+            <grammar src="grammar/ciudad.jsgf"/>
+            <prompt>Indicate the city where you are or say help to see what options are available</prompt>
+ 
+            <!-- Llama al evento 'info_ciudades' del fichero information.xml cuando el usuario pide ayuda-->
+            <help>
+				<throw event="info_ciudades_en"/>
+			</help>
+            
+            <!-- Llama al evento 'info_ciudades' del fichero information.xml cuando se vence el tiempo de respuesta-->
+            <noinput>
+				<throw event="info_ciudades_en"/>
+			</noinput>
+
+            <filled>
+                <assign name="correcto" expr="comprobarCiudad(ciu)"/>
+                
+                <!-- Si devuelve 1, la ciudad es correcta -->
+				<if cond="correcto=='0'">
+					<goto next="#ciudad_error"/>
+				</if>
+                
+                <assign name="ciudad_name" expr="ciu"/>
+                
+			</filled>
+            
+        </field>
+        
+        <field name="fac">
+            <grammar src="grammar/faculty.jsgf"/>
+            <prompt>Indicate the faculty where you want the appointment or say help to see what options are available</prompt>
+            <help>
+				<throw event="info_facultades_en"/>
+			</help>
+            <noinput>
+				<throw event="info_facultades_en"/>
+			</noinput>
+            
+            <filled>
+                <assign name="correcto" expr="checkFaculty(fac)"/>
+                
+                <!-- Si devuelve 1, la facultad es correcta -->
+				<if cond="correcto=='0'">
+					<goto next="#facultad_error"/>
+				</if>
+                
+                <assign name="facultad_name" expr="fac"/>
+                
+			</filled>
+            
+        </field>
+        
+        <field name="hor">
+            <grammar src="grammar/schedule.jsgf"/>
+            <prompt>At what time do you want the appointment? You are able to say HELP to consult the schedule</prompt>
+            <help>
+				<throw event="info_horarios_en"/>
+			</help>
+            <noinput>
+				<throw event="info_horarios_en"/>
+			</noinput>
+        </field>
+        
+        <filled>
+            <assign name="correcto" expr="checkHorario(hor)"/>
+            
+            <if cond="correcto=='0'">
+                <goto next="#horario_error"/>
+            </if>
+
+            <assign name="hora_name" expr="hor"/>
+
+            <prompt>You have booked the appointment at <value expr="hora_name"/> in the <value expr="facultad_name"/> faculty in <value expr="ciudad_name"/></prompt>
+            <assign name="hay_cita" expr="'si'"/>
+            <goto next="#f_reiniciar"/>
+        </filled>
+        
+    </form>
+    
+    <form id="f_consultar">
+        <block>
+            <prompt> Let's consult your appointment</prompt>
+            <break time="250ms"/>
+        </block>
+        
+        <field name="confirmacion_cita">
+            <grammar src="grammar/confirmation.jsgf"/>
+            <prompt>Is this correct? Respond Yes or No</prompt>
+            
+            <filled>
+                <if cond="confirmacion_cita=='yes'">
+                    <if cond="hay_cita=='si'">
+                        <prompt>You have booked the appointment in the <value expr="facultad_name"/> faculty in <value expr="ciudad_name"/></prompt>
+                        <goto next="#f_reiniciar"/>
+
+                    <else/>
+                        <prompt>You haven't booked an appointment yet</prompt>
+                        <break time="1000ms"/>
+                        <goto next="#f_reiniciar"/>
+                    </if>    
+                
+                <else/>
+                    
+                    <prompt>Thank you for having used our platform. Goodbye</prompt>
+                    <noinput>
+                        <exit/>
+                    </noinput>
+                </if>
+            
+            
+            </filled>
+                        
+        </field>
+    
+    </form>
+    
+    
+    <form id="f_cancelar">
+        <block>
+            <prompt> Let's cancel your appointment</prompt>
+            <break time="250ms"/>
+        </block>
+        
+        <field name="confirmacion_cita">
+            <grammar src="grammar/confirmation.jsgf"/>
+            <prompt>Are you sure that you want to cancel? Respond YES or NO</prompt>
+            
+            <filled>
+                <if cond="confirmacion_cita=='yes'">
+                    <if cond="hay_cita=='si'">
+                        <assign name="hay_cita" expr="'no'"/>
+                        
+                        <prompt>The appointment has been cancelled</prompt>
+                        <goto next="#f_reiniciar"/>
+                        
+                    <else/>
+                        <prompt>You haven't booked an appointment yet</prompt>
+                        <break time="1000ms"/>
+                        <goto next="#f_reiniciar"/>
+                    </if>    
+                
+                <else/>
+                    
+                    <prompt>Thank you for having used our platform. Goodbye</prompt>
+                    <noinput>
+                        <exit/>
+                    </noinput>
+                </if>
+            
+            
+            </filled>
+                        
+        </field>
+    
+    </form>
+    
+    
+    <form id="f_reiniciar">
+        <field name="reinicio">
+            <grammar src="grammar/confirmation.jsgf"/>
+            <prompt>Would you like to do anything else?</prompt>
+            
+            <filled>
+                <if cond="reinicio=='yes'">
+                    <prompt>OK. Reloading the questionnaire...</prompt>
+                    <break time="1s"/>
+                    <goto next="#inicio"/>
+                
+                <else/>
+                    
+                    <prompt>Thank you for having used our platform. Goodbye</prompt>
+                    <noinput>
+                        <exit/>
+                    </noinput>
+                </if>
+            
+            </filled>
+            
+        </field>
+    
+    </form>
+    
+    
+    <form id="ciudad_error">
+        <field name="ciu_error">
+            <prompt>Apologies, we only work with Granada, Ceuta and Melilla's Universities. Please, call again</prompt>
+            <noinput>
+                <exit/>
+			</noinput>
+        </field>
+    
+    </form>
+    
+    <form id="facultad_error">   
+        <field name="fac_error">
+            <prompt>we only work with the IT, Arts and Medicine Faculties.Please, call again</prompt>
+            <noinput>
+                <exit/>
+			</noinput>
+            
+        </field>
+    
+    </form>
+
+    <form id="horario_error">
+        <field name="hor_error">
+            <prompt>Aplogies, whe haven't any appointment available at this hour.The times that are available are from 9 am to half past 12. The appointments are in 30 minute time slots. Please, call again</prompt>
+            <noinput>
+                <exit/>
+			</noinput>
+        </field>
+    
+    </form>
+
+</vxml>

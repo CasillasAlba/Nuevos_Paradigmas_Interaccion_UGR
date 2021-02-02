@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xml:lang="es-ES">
+
+    <catch event="info_ciudades">
+        <prompt>Nuestro servicio es ofrecido por la UGR, por lo que las ciudades disponibles son: Granada, Ceuta y Melilla</prompt>
+        <reprompt/>
+    </catch>
+
+    <catch event="info_facultades">
+        <prompt>Este servicio solo proporciona reservas para las facultades de informatica, bellas artes y medicina</prompt>
+        <reprompt/>
+    </catch>
+
+    <catch event="info_horarios">
+        <prompt>El horario disponible se encuentra de 9 a 12 y media. Las citas se encuentran en periodos de 30 minutos</prompt>
+        <reprompt/>
+    </catch>
+
+        <catch event="info_ciudades_en">
+        <prompt xml:lang="en-US">Our service is offered by the UGR, so the available cities are: Granada, Ceuta and Melilla</prompt>
+        <reprompt/>
+    </catch>
+
+    <catch event="info_facultades_en">
+        <prompt xml:lang="en-US">This service offers appointments for the IT, Arts and Medicine Faculties</prompt>
+        <reprompt/>
+    </catch>
+
+    <catch event="info_horarios_en">
+        <prompt xml:lang="en-US">The times that are available are from 9 am to half past 12. The appointments are in 30 minute time slots</prompt>
+        <reprompt/>
+    </catch>
+</vxml>

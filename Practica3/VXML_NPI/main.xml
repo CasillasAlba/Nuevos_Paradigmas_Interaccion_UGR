@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xml:lang="es-ES" application="information.xml">
+    <script src="funciones/saludos.js"/>
+
+    <catch event="nomatch noinput" count ="3">
+        <exit/>
+    </catch>
+    
+    <menu>
+       
+        <prompt><prosody rate="medium"> <value expr="saludo()"/> habla con la  <emphasis> SECRETARIA VIRTUAL </emphasis> de la UGR</prosody></prompt>
+        <break time="500ms"/>
+       
+        <prompt><prosody rate="medium">Para elegir CASTELLANO pulse 1 o diga CASTELLANO</prosody></prompt>
+        <break time="250ms"/>
+
+        <prompt><prosody rate="medium">Para elegir INGLES pulse 2 o diga INGLES</prosody></prompt>
+        
+        <choice dtmf="1" next="citasugr_es.xml">
+            CASTELLANO
+        </choice>
+
+        <choice dtmf="2" next="citasugr_en.xml">
+            <grammar src="grammar/chooseLanguage.jsgf"/>
+                INGLES
+        </choice>
+    </menu>
+  
+</vxml>

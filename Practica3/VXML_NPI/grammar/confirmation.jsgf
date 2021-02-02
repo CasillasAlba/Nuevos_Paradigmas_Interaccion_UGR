@@ -1,0 +1,5 @@
+#JSGF V1.0;
+
+grammar confirmation;
+
+public <confirmation> = yes | no;
