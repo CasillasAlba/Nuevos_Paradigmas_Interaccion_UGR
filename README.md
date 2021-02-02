@@ -38,3 +38,8 @@ Desarrolo de un sistema de diálogo hablado usando el lenguaje VoiceXML. La fina
 
 <img height="30" src="https://user-images.githubusercontent.com/47610906/106669940-b75c6c80-65ac-11eb-872d-b718cb0c9495.png"> VoiceXML.
 
+## Práctica Individual
+Consultar Readme.md del proyecto
+
+
+
