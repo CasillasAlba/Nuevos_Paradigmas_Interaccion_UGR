@@ -7,6 +7,8 @@ Prácticas de la asignatura Nuevos Paradigmas de Interacción de la Universidad 
 + :bust_in_silhouette: [Andrea Navarro Jimenez](https://github.com/andreanaji007) [Prácticas 1 y 2]
 + :bust_in_silhouette: [Miguel Molino Moreno](https://github.com/Miguel-mm) [Práctica 1]
 
+## Clasificaciones
+
 | Práctica | Clasificación | Rango |
 | :---         |     :---:      |          ---: |
 | Práctica 1   | 9    | 0-10     |
